@@ -1,0 +1,22 @@
+My goal: to classify whether a review is categorized as good, bad, or neutral.
+2
+While getting reviews, I also do things like removing emoticons, convert all into lowercase, deleting special characters, changing numbers into #numbers#, also removing duplicate char in a sentence
+3
+Text data requires special preparation before we can start using it.
+Using coutvectorizer for data train
+Call the fit() function in order to learn a vocabulary from one or more documents.
+Call the transform() function on one or more documents as needed to encode each as a vector.
+return encoded vector
+Using tfidf vectorizer, it transforms text to feature vectors that can be used as input to estimator
+To highlight words that are more interesting, e.g. frequent in a document but not across documents. It will returns the weight of each word.
+
+MultinomialNB
+Multinomial Naive Bayes is a specialized version of Naive Bayes that is designed more for text documents. Multinomial naive bayes explicitly models the word counts and adjusts the underlying calculations to deal with in.
+
+Another algorithms are used since i get low accuracy
+KNN
+KNN algorithm is used to classify by finding the K nearest matches in training data and then using the label of closest matches to predict.
+SVC
+Support Vector classifier
+finding the hyper-plane that differentiate the classes we plotted in n-dimensional space.
+Hyperplane is the line
